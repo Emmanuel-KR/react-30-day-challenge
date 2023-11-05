@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './components/Header';
+import Job from './components/Job';
+import Planets from './components/Planets';
+import User from './components/User';
 
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      
+      <Planets/>
+
+      <User name="Emmanuel" age={26} email="emmanuel@email.com" />
+      <Job company = 'Safaricom' position = 'Developer' salary = '250,000' />
     </div>
   );
 }
